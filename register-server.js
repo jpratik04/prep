@@ -45,7 +45,7 @@ const db = getFirestore(firebaseApp);
 
 // Root route to prevent "Cannot GET /" error
 app.get("/", (req, res) => {
-  res.send("🚀 Server is running successfully!");
+  res.sendFile("index.html", { root: "public" })
 });
 
 // Registration endpoint
