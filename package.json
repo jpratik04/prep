@@ -2,6 +2,7 @@
   "name": "try",
   "version": "1.0.0",
   "main": "register-server.js",
+  "type": "module",
   "scripts": {
     "start": "node register-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +16,6 @@
     "dotenv": "^16.0.3",
     "cors": "^2.8.5",
     "firebase-admin": "^11.5.0",
-    "firebase": "^10.7.1",
-    "type": "module"
+    "firebase": "^10.7.1"
   }
 }
