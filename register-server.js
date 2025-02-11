@@ -42,7 +42,7 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 const db = getFirestore(firebaseApp);
-
+app.use(express.static("public"));
 // Root route to prevent "Cannot GET /" error
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root: "public" })
